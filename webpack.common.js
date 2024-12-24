@@ -99,6 +99,12 @@ module.exports = {
       template: './src/about.html',
       filename: './about.html'
     }),
+    // Страницы разделов
+     new HtmlWebpackPlugin({
+      template: './src/help.html',
+      filename: './help.html'
+    }),
+
   // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/articles/petersburg.html',

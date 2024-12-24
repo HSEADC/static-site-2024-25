@@ -4,7 +4,26 @@
 
   html,
   body {
-    background-color: #151515;
+    background-color: #EFEFEF;
     margin-top: 10px;
     height: 100%;
+  }
+  .bar {
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    margin-right: 10px;
+    background-color: #6CA431;
+    text-align: center;
+    border-radius: 45px;
+    font-family: 'Actay-Regular';
+    align-items: center;
+  }
+
+  p{
+    font-family: 'Actay-Regular';
+    font-size: 10px;
+    color:#EFEFEF;
+    margin-bottom: 20px;
+    justify-content: center;
   }
