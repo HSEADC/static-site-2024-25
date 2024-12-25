@@ -6,6 +6,7 @@
   body {
     background-color: #EFEFEF;
     margin-top: 10px;
+    margin-left: 10px;
     height: 100%;
   }
   .bar {
@@ -13,17 +14,19 @@
     width: 200px;
     height: 70px;
     margin-right: 10px;
-    background-color: #6CA431;
     text-align: center;
     border-radius: 45px;
     font-family: 'Actay-Regular';
-    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #6CA431;
   }
 
   p{
     font-family: 'Actay-Regular';
-    font-size: 10px;
-    color:#EFEFEF;
-    margin-bottom: 20px;
-    justify-content: center;
+    font-style: normal;
+    font-size: 30px;
+    color:#2E2E2E;
   }

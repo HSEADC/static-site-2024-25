@@ -7,60 +7,18 @@
   </head>
   <body class="index">
     <div class="head">
-        <img src="./images/logo2.webp" alt="" class="logo" />
-        <a href="about.html" class="catalog"><p>о проекте</p></a>
-    </div>
-    <div class="zaglushka">
-        <h1>
-            УУУПС
-        </h1>
-
-        <p>
-            Сайт еще находится в разработке, но мы пока можем познакомиться.
-        </p>
-
-        <p>Мы — медиа, которое поможет подобрать вам место,<br/>чтобы вы смогли попасть в мир любимого фильма, насладиться знакомым антуражем.
-        </p>
-
-        <form id="my-form" action="https://formspree.io/f/mbljddez" method="POST">
-            <input type="email" name="email" placeholder="andrey-borisov@gmail.com"/>
-            <button id="my-form-button" >Submit</button>
-            <p id="my-form-status"></p>
-        </form>
-    </div>
-    <script>
-        var form = document.getElementById("my-form");
-        
-        async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
-            } else {
-            response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-            })
-            }
-        }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
-    <a href="./articles/moscow.html" class="catalog"><p>Москва</p></a>
-    <a href="./articles/london.html" class="catalog"><p>Лондон</p></a>
+        <a href="index.html"><img src="./images/logo2.webp" alt="" class="logo" /></a>
+        <div class="top_bar">
+          <a href="./catalog.html" class="bar"><p>каталог</p></a>
+          <a href="./help.html" class="bar"><p>поддержка</p></a>
+          <a href="./about.html" class="bar"><p>о нас</p></a>
+        </div>
+     </div>
+     <div class="cities">
+        <a href="./articles/london.html" class="London"><p2>Лондон</p2></a>
+        <a href="./articles/moscow.html" class="Moscow"><p2>Москва</p2></a>
+        <a href="./articles/petersburg.html" class="Petersburg"><p2>Санкт-Петербург</p2></a>
+     </div>
+     <h1>Совсем скоро нас станет больше. На странице будет множество городов, которые вы сможете посетить вместе с нами. Успевай присоединяться и не забывай о том, что ты можешь всегда предложить места своего города во вкладке "поддержка".</h1>
   </body>
 </html>

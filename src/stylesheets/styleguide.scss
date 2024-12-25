@@ -1,0 +1,122 @@
+.bar_styleguide {
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 45px;
+    font-family: 'Actay-Regular';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #6CA431;
+  }
+
+.logo_styleguide {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    width: 1300px;
+    height: auto;
+    margin-top: 200px;
+}
+
+.first_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.style {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.logo_style {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 10%;
+}
+.logo_style2 {
+    position: relative;
+    background-color: #6CA431;
+    width: 500px;
+    height: auto;
+    margin: 10%;
+    border-radius: 20px;
+    border: 7px solid #6CA431;
+}
+
+
+.circle {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+.circle2 {
+    width: 100px;
+    height: auto;
+    border: 3px solid #6CA431;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.colors{
+    margin: 20px;
+    font-family: 'ActayCondensed-Thin';
+    font-size: 20px;
+    text-align: center;
+}
+
+.mockups {
+    width: 600px;
+    height: auto;
+    margin: 30px;
+}
+
+.actay_cond {
+    font-family: 'ActayCondensed-Thin';
+    font-size: 20px;
+    text-align: center;
+    color: #2E2E2E;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.actay_reg {
+    font-family: 'Actay-Regular';
+    font-size: 20px;
+    text-align: center;
+    color: #2E2E2E;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.actay_wide {
+    font-family: 'ActayWide-Bold';
+    font-size: 20px;
+    text-align: center;
+    color: #2E2E2E;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

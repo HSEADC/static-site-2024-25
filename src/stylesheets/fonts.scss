@@ -1,18 +1,16 @@
 @font-face {
     font-family: 'Actay-Regular';
-    src: url('../fonts/Actay-Regular.otf') format('opentype'); 
-    font-style: normal; 
+    src: url('/src/fonts/Actay-Regular.otf'); 
     font-weight: normal;
+    font-style: normal;
   }
 @font-face {
     font-family: 'ActayCondensed-Thin';
-    src: url("../fonts/ActayCondensed-Thin.otf") format('opentype');
-    font-style: normal;
+    src: url('../fonts/ActayCondensed-Thin.otf');
     font-weight: normal;
 }
 @font-face {
     font-family: "ActayWide-Bold";
-    src: url('../fonts/ActayWide-Bold.otf') format('opentype');
-    font-style: normal;
+    src: url('../fonts/ActayWide-Bold.otf');
     font-weight: normal;
 }

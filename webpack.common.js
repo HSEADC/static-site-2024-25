@@ -100,11 +100,25 @@ module.exports = {
       filename: './about.html'
     }),
     // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/main.html',
+      filename: './main.html'
+    }),
+    // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
+    }),
+    // Страницы разделов
      new HtmlWebpackPlugin({
       template: './src/help.html',
       filename: './help.html'
     }),
-
+    // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/catalog.html',
+      filename: './catalog.html'
+    }),
   // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/articles/petersburg.html',
@@ -114,6 +128,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/london.html',
       filename: './articles/london.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/moscow.html',
+      filename: './articles/moscow.html'
     }),
 
   ],
