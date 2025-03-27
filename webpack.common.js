@@ -73,13 +73,15 @@ module.exports = {
           filename: 'images/[hash][ext][query]'
         }
       },
-      {
-        test: /\.(ttf|otf)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
-        }
-      }
+      
+        {
+          test: /\.(ttf|otf|woff|woff2)$/i,
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]',
+          },
+        },
+  
     ]
   },
   plugins: [
@@ -98,6 +100,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html'
+    }),
+    // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html'
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
@@ -126,13 +133,53 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/london.html',
-      filename: './articles/london.html'
+      template: './src/articles/moscow.html',
+      filename: './articles/moscow.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/moscow.html',
-      filename: './articles/moscow.html'
+      template: './src/articles/harrypotter.html',
+      filename: './articles/harrypotter.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/harrypotter2.html',
+      filename: './articles/harrypotter2.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/friends.html',
+      filename: './articles/friends.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/friends2.html',
+      filename: './articles/friends2.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/totoro.html',
+      filename: './articles/totoro.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/totoro2.html',
+      filename: './articles/totoro2.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/shrek.html',
+      filename: './articles/shrek.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/shrek2.html',
+      filename: './articles/shrek2.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/turtles.html',
+      filename: './articles/turtles.html'
     }),
 
   ],
