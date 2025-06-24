@@ -74,13 +74,13 @@ module.exports = {
         }
       },
       
-        {
-          test: /\.(ttf|otf|woff|woff2)$/i,
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[name].[ext]',
-          },
+      {
+        test: /\.(woff2?|ttf|otf|eot)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][hash][ext][query]",
         },
+      },
   
     ]
   },
@@ -118,23 +118,48 @@ module.exports = {
     }),
     // Страницы разделов
      new HtmlWebpackPlugin({
-      template: './src/help.html',
-      filename: './help.html'
+      template: './src/quiz.html',
+      filename: './quiz.html'
     }),
+
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/catalog.html',
       filename: './catalog.html'
     }),
-  // Страницы разделов
+
+    // Страницы разделов
     new HtmlWebpackPlugin({
-      template: './src/articles/petersburg.html',
-      filename: './articles/petersburg.html'
+      template: './src/all_quiz.html',
+      filename: './all_quiz.html'
+    }),
+
+   // Страницы разделов
+        new HtmlWebpackPlugin({
+          template: './src/quiz2.html',
+          filename: './quiz2.html'
+        }),
+
+            // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/quiz3.html',
+      filename: './quiz3.html'
+    }),
+
+            // Страницы разделов
+            new HtmlWebpackPlugin({
+              template: './src/profile.html',
+              filename: './profile.html'
+            }),
+
+    new HtmlWebpackPlugin({
+      template: './src/moscow.html',
+      filename: './moscow.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/articles/moscow.html',
-      filename: './articles/moscow.html'
+      template: './src/kazan.html',
+      filename: './kazan.html'
     }),
 
     new HtmlWebpackPlugin({
@@ -181,6 +206,17 @@ module.exports = {
       template: './src/articles/turtles.html',
       filename: './articles/turtles.html'
     }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/harrypotter3.html',
+      filename: './articles/harrypotter3.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/totoro3.html',
+      filename: './articles/totoro3.html'
+    }),
+
 
   ],
   

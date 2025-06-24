@@ -1,17 +1,31 @@
 @font-face {
-    font-family: 'Actay-Regular';
-    src: url('../fonts/Actay-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'ActayCondensed-Thin';
-    src: url('../fonts/ActayCondensed-Thin.otf');
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'ActayWide-Bold';
-    src: url('../fonts/ActayWide-Bold.otf');
-    font-weight: normal;
-  }
+  font-family: 'Actay Wide';
+  src: url('../fonts/ActayWide-Bold.woff2') format('woff2'),
+      url('../fonts/ActayWide-Bold.woff') format('woff'),
+      url('../fonts/ActayWide-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Actay';
+  src: url('../fonts/Actay-Regular.woff2') format('woff2'),
+      url('../fonts/Actay-Regular.woff') format('woff'),
+      url('../fonts/Actay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Actay Condensed';
+  src: url('../fonts/ActayCondensed-Thin.woff2') format('woff2'),
+      url('../fonts/ActayCondensed-Thin.woff') format('woff'),
+      url('../fonts/ActayCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
   

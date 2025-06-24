@@ -3,7 +3,7 @@
     width: 400px;
     height: 400px;
     justify-content: center;
-    border: 3px solid #6CA431;
+    border: 2px solid #4F7427;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,22 @@
     margin: 30px;
     align-items: center;
 }
+.click{
+    font-family: 'Actay';
+    color: #ffffff;
+}
+.films{
+    position: relative;
+    display: flex;
+    margin-left: 2%;
+}
 .foto_articles {
-    width: 400px;
+    width: 100%;
     height: auto;
+    border-radius: 45px;
 }
 h10{
-    font-family: 'ActayCondensed-Thin';
+    font-family: 'Actay Condensed';
     font-size: 20px;
     text-align: center;
     color: #2E2E2E;
@@ -24,13 +34,13 @@ h10{
     margin-bottom: 20px;
 }
 .read_button {
-    background-color: #6CA431;
+    background-color: #4F7427;
     text-decoration: none;
     width: 200px;
     height: 70px;
     text-align: center;
     border-radius: 45px;
-    font-family: 'Actay-Regular';
+    font-family: 'Actay';
     position: relative;
     display: flex;
     justify-content: center;
@@ -43,7 +53,7 @@ h10{
     width: 200px;
     height: 70px;
     text-align: center;
-    font-family: 'Actay-Regular';
+    font-family: 'Actay';
     color: #ffffff;
     font-size: 15px;
   }
